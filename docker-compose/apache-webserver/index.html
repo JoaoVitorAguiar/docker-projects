@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Landing Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    section {
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    section h2 {
+      margin-bottom: 10px;
+      font-size: 2rem;
+      color: #333;
+    }
+
+    section p {
+      font-size: 1.2rem;
+      color: #666;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Our Landing Page</h1>
+  </header>
+
+  <section>
+    <h2>Discover Our Services</h2>
+    <p>We offer top-notch solutions to help grow your business. Join us and take advantage of our amazing offers.</p>
+    <button id="cta-button">Click Me for a Surprise!</button>
+    <p id="surprise-message" class="hidden">Thank you for clicking! We appreciate your interest.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('cta-button').addEventListener('click', function() {
+      document.getElementById('surprise-message').classList.remove('hidden');
+    });
+  </script>
+</body>
+</html>
